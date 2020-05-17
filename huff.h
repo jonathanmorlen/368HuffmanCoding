@@ -37,13 +37,13 @@ typedef struct Dictionary Dictionary;
 // binary tree for easy construction of Huffman tree from list
 struct Node
 {				
-	int        			value; // Numerical representation of ASCII character
+	int        	value; // Numerical representation of ASCII character
 	unsigned long   frequency; // Number of times character happens in given file
-	Node*       		 left; // List neighbor to left
-	Node*      			right; // List neighbor to right
-	Node*  			leftChild; // Tree child to left
-	Node* 		   rightChild; // Tree child to right
-	char*     		     code; // Bit code generated from node's position in Huffman tree
+	Node*       	left; // List neighbor to left
+	Node*      	right; // List neighbor to right
+	Node*  		leftChild; // Tree child to left
+	Node* 		rightChild; // Tree child to right
+	char*     	code; // Bit code generated from node's position in Huffman tree
 };
 
 // Manages doubly-linked list
